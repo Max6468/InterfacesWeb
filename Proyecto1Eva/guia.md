@@ -26,6 +26,8 @@ Cada año, para marcar la festividad, todo el mundo realiza decoraciones en las 
 
 - Noticias: Actualizaciones sobre eventos, actividades y noticias relevantes relacionadas con el colegio.
 
+- Formulario: A la hora de poder pedir información sobre el colegio, o las actividades navideñas, se hará un formulario, dónde escogiendo el tema o topic, a parte de escribir nombre y correo, y llegará la información pedida.
+
 ### Footer
 Incluirá información de contacto, enlaces a redes sociales y un pequeño aviso sobre derechos de autor, a parte de estar decorado.
 
