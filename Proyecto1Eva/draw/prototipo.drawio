@@ -1,26 +1,35 @@
 <mxfile host="65bd71144e">
     <diagram id="NGKuehqLRzqjEHL3xjPX" name="Page-1">
-        <mxGraphModel dx="810" dy="1707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="953" dy="1814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#A1242A;fillColor=#DEE2E6;strokeWidth=3;shadow=0;glass=0;" vertex="1" parent="1">
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#A1242A;fillColor=#93A17A;strokeWidth=3;shadow=0;glass=0;" parent="1" vertex="1">
                     <mxGeometry x="80" y="40" width="520" height="500" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font color=&quot;#333333&quot;&gt;Logo, Banner y si es necesario, nombre&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DEE2E6;strokeColor=#A1242A;strokeWidth=3;shadow=0;glass=0;" vertex="1" parent="1">
+                <mxCell id="4" value="&lt;font color=&quot;#333333&quot;&gt;Logo, Banner y si es necesario, nombre&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#93A17A;strokeColor=#A1242A;strokeWidth=3;shadow=0;glass=0;" parent="1" vertex="1">
                     <mxGeometry x="80" y="-60" width="520" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="&lt;font color=&quot;#141414&quot;&gt;Inicio&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEE2E6;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" vertex="1" parent="1">
+                <mxCell id="5" value="&lt;font color=&quot;#141414&quot;&gt;Inicio&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9C9C;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="10" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="&lt;font color=&quot;#141414&quot;&gt;Contexto Histórico&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEE2E6;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" vertex="1" parent="1">
+                <mxCell id="10" value="&lt;font color=&quot;#141414&quot;&gt;Contexto Histórico&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9C9C;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" parent="1" vertex="1">
                     <mxGeometry x="210" y="10" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20color%3D%26quot%3B%23141414%26quot%3B%26gt%3BContexto%20Hist%C3%B3rico%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3D%23DEE2E6%3BgradientColor%3Dnone%3BstrokeColor%3D%233D4D2F%3BstrokeWidth%3D3%3BperimeterSpacing%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22180%22%20y%3D%2210%22%20width%3D%22130%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;font color=&quot;#141414&quot;&gt;Noticias&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEE2E6;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" vertex="1" parent="1">
+                <mxCell id="11" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20color%3D%26quot%3B%23141414%26quot%3B%26gt%3BContexto%20Hist%C3%B3rico%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3D%23DEE2E6%3BgradientColor%3Dnone%3BstrokeColor%3D%233D4D2F%3BstrokeWidth%3D3%3BperimeterSpacing%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22180%22%20y%3D%2210%22%20width%3D%22130%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;font color=&quot;#141414&quot;&gt;Noticias&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9C9C;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" parent="1" vertex="1">
                     <mxGeometry x="340" y="10" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="&lt;font color=&quot;#141414&quot;&gt;Formulario&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEE2E6;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" vertex="1" parent="1">
+                <mxCell id="12" value="&lt;font color=&quot;#141414&quot;&gt;Formulario&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9C9C;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;" parent="1" vertex="1">
                     <mxGeometry x="470" y="10" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#141414&quot;&gt;&amp;nbsp; Contacta con Nosotros&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Política de Privacidad&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Colegio Calasanz&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9C9C;gradientColor=none;strokeColor=#3D4D2F;strokeWidth=3;perimeterSpacing=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="510" width="520" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="CUERPO" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;glass=0;shadow=0;strokeColor=#A5A8AB;fillColor=#D1D5D9;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="70" width="350" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="LINKS &quot;Te podría Interesar&quot;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=10;fillColor=#D1D5D9;strokeColor=#A5A8AB;imageHeight=24;arcSize=25;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="70" width="120" height="410" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
