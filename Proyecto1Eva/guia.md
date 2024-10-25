@@ -44,6 +44,14 @@ He elegido una paleta de colores cálidos que evocan el espíritu navideño:
 - Dorado: Añade un toque de elegancia y festividad.
 - Blanco: Un color que representa la festividad, también sirve como otro toque de elegancia y festividad
 
+En éste caso, voy a utilizar la paleta de colores:
+-  ![#DEE2E6](https://via.placeholder.com/15/DEE2E6/000000?text=+) `#DEE2E6`
+-  ![#3D4D2F](https://via.placeholder.com/15/3D4D2F/000000?text=+) `#3D4D2F`
+-  ![#A1242A](https://via.placeholder.com/15/A1242A/000000?text=+) `#A1242A`
+-  ![#AE3932](https://via.placeholder.com/15/AE3932/000000?text=+) `#AE3932`
+-  ![#C88554](https://via.placeholder.com/15/C88554/000000?text=+) `#C88554`
+
+
 ## Elección de Fuentes
 
 He elegido dos fuestes:
