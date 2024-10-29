@@ -1,0 +1,31 @@
+body {
+    background-color: #93A17A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    justify-content: center;
+    display: flex;
+}
+
+.menu a {
+    border: 1px solid black;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    display: inline-block;
+    flex-grow: 4;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #A1242A;
+    transform: scale(1.02); 
+}
+
+.bannerCalasanz {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
