@@ -14,6 +14,7 @@ body {
     display: inline-block;
     flex-grow: 4;
     text-align: center;
+
 }
 
 .menu a:hover {
@@ -29,3 +30,5 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+
