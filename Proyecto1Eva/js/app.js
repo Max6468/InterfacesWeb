@@ -7,7 +7,7 @@ window.addEventListener("load", (event) => {
   
       let x = innerWidth * Math.random();
       let size = (Math.random() * 8) + 2; // Random size between 2px and 10px
-      let animationDelay = Math.random() * 5; // Random animation delay between 0 and 5 seconds
+      let animationDelay = Math.random() * 10; // Random animation delay between 0 and 5 seconds
       let animationDuration = Math.random() * 10 + 5; // Random animation duration between 5 and 15 seconds
   
       snowflake.style.left = `${x}px`;
@@ -27,3 +27,17 @@ window.addEventListener("load", (event) => {
   
     setInterval(createSnowflake, 100);
   });
+
+
+  // app.js
+
+// app.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', function() {
+      menu.classList.toggle('active'); // Alternamos la clase 'active' en el menú
+  });
+});
