@@ -6,6 +6,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
+}
+
+.index-body {
     overflow: hidden;
 }
 
@@ -194,6 +198,51 @@ i {
     color: #4A4A4A;
     margin: 5px 0 0;
 }
+
+.formulario-navidad {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-navidad label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.formulario-navidad input,
+.formulario-navidad textarea {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check input{
+    width: 5%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-navidad button {
+    background-color: #A1242A;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-navidad button:hover {
+    background-color: #FF1493;
+}
+
+
 
 
 @media(max-width:601px){

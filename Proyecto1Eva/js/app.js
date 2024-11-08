@@ -51,4 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.body.classList.contains("index-body")) {
+      document.body.style.overflow = "hidden";
+  } else {
+      document.body.style.overflow = "auto";
+  }
+});
 
