@@ -25,7 +25,7 @@ window.addEventListener("load", (event) => {
       });
     };
   
-    setInterval(createSnowflake, 100);
+    setInterval(createSnowflake, 800);
   });
 
 
@@ -38,6 +38,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const menu = document.querySelector('.menu');
 
   menuToggle.addEventListener('click', function() {
-      menu.classList.toggle('active'); // Alternamos la clase 'active' en el menú
+      menu.classList.toggle('active'); 
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const banner = document.querySelector('.bannerCalasanz');
+  
+
+  banner.addEventListener('click', function() {
+      window.location.href = 'index.html'; 
+  });
+});
+
+
