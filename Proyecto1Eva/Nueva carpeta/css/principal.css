@@ -1,0 +1,245 @@
+/* Estilos generales */
+body {
+    background-color: #93A17A;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bannerCalasanz {
+    width: 100%;
+    padding: 30px;
+    background-image: url("../img/fondo_navidad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+}
+
+.texto {
+    font-size: 40px;
+    color: rgb(222, 222, 222);
+    font-weight: bold;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #FF1493;
+}
+
+/* Menú principal en modo web */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #A1242A;
+}
+
+.menu a {
+    flex-grow: 1;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #FF1493;
+}
+
+/* Estilos para el contenido principal */
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.cuerpo {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.contenido-principal {
+    flex: 3;
+    background-color: #D3D3D3;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #D3D3D3;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para el pie de página en modo web */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Asegura que el footer se mantenga en la parte inferior */
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(max-width:601px) {
+    .web-footer {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+/* Estilos de animación */
+i {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0 -1px 1px rgb(114, 114, 114);
+    top: -10px;
+    animation: nieve linear infinite;
+}
+
+
+@media (max-width: 768px) {
+    body{
+        overflow: scroll;
+    }
+    nav.menu {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    nav.menu.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+    .menu-toggle div {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 5px 0;
+    }
+    .noticias-grid {
+        flex-wrap: wrap;    /* Permite que las tarjetas se envuelvan en una nueva fila */
+        justify-content: center; /* Alinea las tarjetas al centro */
+    }
+
+    .noticia-card {
+        width: 100%;        /* Las tarjetas ocuparán todo el ancho en pantallas pequeñas */
+        max-width: 300px;   /* Limita el tamaño máximo de las tarjetas */
+    }
+}
+
+/* Footer Fix */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contenedor de las noticias */
+.noticias-grid {
+    display: flex;
+    justify-content: center;        /* Alinea las tarjetas al centro horizontalmente */
+    align-items: center;            /* Centra las tarjetas verticalmente */
+    gap: 20px;                      /* Espaciado entre tarjetas */
+    flex-wrap: wrap;                /* Permite que las tarjetas se envuelvan a la siguiente fila */
+    padding: 20px;
+    overflow-x: auto;               /* Habilita el scroll horizontal si no cabe todo */
+    text-align: center;
+}
+
+/* Estilo de cada tarjeta de noticia */
+.noticia-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px;                    /* Ancho fijo de la tarjeta */
+    height: 350px;                   /* Altura fija para que todas las tarjetas tengan el mismo tamaño */
+    display: flex;                   /* Usamos flexbox para alinesar el contenido dentro de la tarjeta */
+    flex-direction: column;          /* Para que los elementos dentro se apilen en columna */
+    justify-content: space-between;  /* Asegura que los elementos (imagen, título y descripción) estén distribuidos */
+    overflow: hidden;                /* Asegura que el contenido no se desborde */
+    flex-shrink: 0;                  /* Evita que las tarjetas se reduzcan */
+    transition: transform 0.3s ease;  /* Transición suave para el hover */
+}
+
+/* Imagen de la noticia */
+.noticia-card img {
+    width: 100%;                     /* La imagen ocupará todo el ancho de la tarjeta */
+    height: 150px;                   /* Altura fija para la imagen */
+    object-fit: cover;               /* Ajusta la imagen para cubrir el área sin distorsionarse */
+}
+
+/* Contenido de la tarjeta */
+.noticia-content {
+    padding: 10px;
+    flex-grow: 1;                    /* Hace que el contenido se expanda si es necesario */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticia-content h4 {
+    font-size: 18px;
+    color: #A1242A;
+    margin-bottom: 10px;
+    text-align: center;              /* Centra el título */
+}
+
+.noticia-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;              /* Centra el texto */
+}
+
+/* Efecto hover en la tarjeta */
+.noticia-card:hover {
+    transform: scale(1.05);          /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más grande al hacer hover */
+}

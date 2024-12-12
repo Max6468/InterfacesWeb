@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad en Calasanz</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/calendario.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body onload="loadCalendar()">
+    <header>
+        <section class="bannerCalasanz">
+            <div class="texto">Colegio Calasanz Salamanca</div>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Contexto Histórico</a>
+        <a href="#">Noticias</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="calendario.html">Calendario</a>
+    </nav>
+
+    <main>
+        <section class="cuerpo">
+            <div class="contenido-principal"><br>
+                <div class="calendario-section">
+                    <h1 class="titulo-seccion">Calendario de Actividades</h2>
+                    <!-- Aquí se imprime el calendario dinámico -->
+                    <div id="calendar" class="calendar-grid"></div>
+                    <!-- Modal para detalles del día -->
+                    <div id="day-details" class="hidden">
+                        <button onclick="closeDetails()">Cerrar</button>
+                        <h2 id="day-title"></h2>
+                        <div id="day-activities"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="menuMovil">
+        <a href="#">Formulario</a>
+        <a href="#">Contexto Histórico</a>
+        <a href="#">Noticias</a>
+    </nav>
+    <footer class="web-footer">
+        <a href="#">Contacta con Nosotros</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Colegio Calasanz</a>
+    </footer>
+</body>
+</html>

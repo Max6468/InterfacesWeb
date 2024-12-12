@@ -1,0 +1,262 @@
+/* Contenedor del calendario */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Mantén 7 columnas */
+    gap: 5px; /* Reduce el espacio entre los días */
+    padding: 10px; /* Reduce el padding general */
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+  }
+  
+  /* Encabezados de los días de la semana */
+  .calendar-day-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  
+  /* Estilo para los días */
+  .calendar-day {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left; /* Alinear contenido al inicio */
+    padding: 5px;
+    font-size: 12px; /* Reduce el tamaño de la fuente */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Día arriba, información debajo */
+    align-items: flex-start; /* Alinear contenido al borde izquierdo */
+    height: 80px; /* Reduce la altura de las cajas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-day strong {
+    font-size: 14px; /* Tamaño más grande para el número del día */
+    color: #333;
+    margin-bottom: 4px; /* Espacio entre el número y la información */
+  }
+  
+  .calendar-day p {
+    margin: 0;
+    font-size: 11px; /* Reduce el tamaño de la información */
+    line-height: 1.2; /* Compacta el texto */
+  }
+  
+  .calendar-day:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  /* Para días vacíos */
+  .calendar-day.empty {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+  }
+  
+  /* Detalles del día */
+  #day-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: left;
+    display: none;
+  }
+  
+  #day-details.hidden {
+    display: none;
+  }
+  
+  #day-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #day-details button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #day-details button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Contenedor del calendario */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Encabezados de los días de la semana */
+.calendar-day-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Días del calendario */
+.calendar-day {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Limita a 2 líneas */
+}
+
+
+
+/* Hover effect */
+.calendar-day:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+/* Día actual */
+.calendar-day.today {
+    background-color: #FFEB3B;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.6);
+}
+
+/* Fines de semana */
+.calendar-day.weekend {
+    background-color: #fbe9e7;
+}
+
+/* Eventos destacados */
+.calendar-day.event {
+    background-color: #81d4fa;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Tooltip para eventos */
+.calendar-day.event:hover::after {
+    content: attr(data-event);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* The Modal (background) */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in */
+}
+
+/* Animación de desvanecimiento para el modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-30%); /* Inicia un poco más arriba */
+    opacity: 0; /* Empezar con opacidad 0 para la animación */
+    animation: slideIn 0.5s ease-out forwards; /* Deslizar con fade-in */
+}
+
+/* Animación de deslizamiento del contenido */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30%); /* Inicia desde arriba */
+        opacity: 0; /* Sin opacidad al inicio */
+    }
+    to {
+        transform: translateY(0); /* Baja a su posición final */
+        opacity: 1; /* Gana opacidad al final */
+    }
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Para cerrar el modal de manera suave */
+.modal.hidden {
+    animation: fadeOut 0.3s ease-in-out forwards; /* Desvanecer al cerrar */
+    display: block;
+}
+
+/* Animación de desvanecimiento para el cierre del modal */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

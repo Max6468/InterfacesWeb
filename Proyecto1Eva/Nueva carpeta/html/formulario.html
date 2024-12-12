@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad en Calasanz</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <script src="../js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="bannerCalasanz">
+            <div class="texto">Colegio Calasanz Salamanca</div>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Contexto Histórico</a>
+        <a href="#">Noticias</a>
+        <a href="formulario.html">Formulario</a>
+    </nav>
+
+    <main>
+        <section class="cuerpo">
+            <div class="contenido-principal"><br>
+                <h2>Formulario de Participación en Actividades Navideñas</h2>
+                <p>¡Únete a las celebraciones de Navidad en el Colegio Calasanz! Rellena este formulario para inscribirte en nuestras actividades.</p>
+            
+                <form action="/submit-form" method="POST" class="formulario-navidad">
+
+                    <fieldset>
+                        <legend>Información del Participante</legend>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+            
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="telefono">Teléfono de Contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </fieldset>
+            
+
+                    <fieldset class="check">
+                        <legend>Actividades Navideñas</legend>
+                        <p>¿En qué actividades te gustaría participar?</p>
+            
+                        <label><input type="checkbox" name="actividades" value="decoracion"> Decoración Navideña</label><br>
+                        <label><input type="checkbox" name="actividades" value="coro"> Coro Navideño</label><br>
+                        <label><input type="checkbox" name="actividades" value="teatro"> Teatro Navideño</label><br>
+                        <label><input type="checkbox" name="actividades" value="voluntariado"> Voluntariado de Navidad</label><br>
+                    </fieldset>
+            
+
+                    <fieldset>
+                        <legend>Comentarios</legend>
+                        <label for="comentarios">¿Tienes alguna sugerencia o comentario?</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </fieldset>
+            
+
+                    <button type="submit">Enviar Inscripción</button>
+                </form>
+            </div>
+            
+            <aside class="sidebar">LINKS "Te podría Interesar"</aside>
+        </section>
+    </main>
+
+
+
+    <nav class="menuMovil">
+        <a href="#">Formulario</a>
+        <a href="#">Contexto Histórico</a>
+        <a href="#">Noticias</a>
+    </nav>
+    <footer class="web-footer">
+        <a href="#">Contacta con Nosotros</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Colegio Calasanz</a>
+    </footer>
+</body>
+</html>
